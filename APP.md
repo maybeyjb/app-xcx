@@ -10,7 +10,7 @@
 
 因为bp抓的是web流量，有的app不走web，就抓不到
 
-5min 配置代理
+配置代理
 
 这里注意：需要用当前的网段
 
@@ -24,7 +24,7 @@
 
 ![image-20250330141912076](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613088.png)
 
-20min  apk的靶场。这个andior和java语言类似
+apk的靶场。这个andior和java语言类似
 
 ![image-20250330180325526](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613090.png)
 
@@ -32,9 +32,9 @@
 
 第6天前10分钟有安装配置证书的教程
 
-单向校验--xp模块：屏蔽他的校验		26min --- 31min 演示安装xp。
+单向校验--xp模块：屏蔽他的校验		演示安装xp。
 
-33min  开启xp模块，（重启模拟器），成功绕过靶场的单向验证 	xp框架绕过单向验证
+开启xp模块，（重启模拟器），成功绕过靶场的单向验证 	xp框架绕过单向验证
 
 ![image-20250330194551395](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613091.png)
 
@@ -48,13 +48,11 @@
 
 ### 代理检测 :
 
-37min     wifi自身代理：
+wifi自身代理：
 
 ![image-20250330223859577](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613093.png)
 
-
-
-42min 绕过代理：app代理工具postern来替换网络设置代理或者用本地代理工具proxifier（将模拟器的进程转发到指定的端口）
+绕过代理：app代理工具postern来替换网络设置代理或者用本地代理工具proxifier（将模拟器的进程转发到指定的端口）
 
 ![image-20250405160701775](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613094.png)
 
@@ -72,21 +70,19 @@
 
 逍遥代理有问题，下次之间在多开器里面删了重新下载一个
 
-
-
 模拟器的进程可以通过科莱来进行抓取确认，找到进程
 
-55min  app演示，绕过单向代理
+app演示，绕过单向代理
 
 ![image-20250330224331512](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613098.png)
 
 ![image-20250330231008194](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613099.png)
 
-1h02min 双重代理：代理+证书校验   xp+代理工具
+双重代理：代理+证书校验   xp+代理工具
 
 就是打开xp框架模板+代理工具就可以。
 
-1h10min 探探的双重验证。下节课
+探探的双重验证。下节课
 
 1h11min  双重代理，就是这个app你需要挂代理，但是你还想抓流量包。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
@@ -96,15 +92,13 @@ mobexler：
 
 运行即可，自动调试的：
 
-F:\gayxiaodi\v2025\002-信息收集-小迪安全\023-信息收集-APP应用&静态提取&调试项目&环境工具等\Mobile-Security-Framework-MobSF-4.1.3
-
 ![image-20250403104144702](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613100.png)
 
 直接上传apk文件去，自动反编译分析，提取一些信息。反编译如果有壳，就反编译的不全。
 
 ![image-20250405144005058](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613101.png)
 
-9min 可能存在双向验证、就需要你脱壳后反编译找到里面的证书key导入，才能进行后续抓包操作：
+可能存在双向验证、就需要你脱壳后反编译找到里面的证书key导入，才能进行后续抓包操作：
 
 ![image-20250405144243295](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613102.png)
 
@@ -172,7 +166,7 @@ python r0capture.py -U -f com.well.likes -p tantan.pcap
 
 Firda+HOOK-JS+BurpSuite
 
-43min 需要准备好js，hook技术
+需要准备好js，hook技术
 
 将js文件放到模拟器的目录下，利用Firda技术配合代理和js文件（hook）成功抓取数据包到bp中。
 
@@ -186,17 +180,11 @@ frida  -U  -f  com.p1.mobile.putong  -l  SSLUnpinning.js    	com.well.likes	com.
 
 ![image-20250405213212122](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613115.png)
 
-
-
 55min 利用Firda技术绕王者营地，记住要开启模拟器那边的Firda进程。翻车1和06min -----1h09min （xp框架容易搞崩app或者模拟器）：
 
 
 
 1h13min  测试抖音，比较困难，通杀方案也抓不全
-
-
-
-
 
 这个方法都是先试一试上面单向的能不能行，不行再用这个方法。
 
@@ -208,15 +196,11 @@ IOS端-双向认证-SSL Kill switch 2
 
 1h29min   因为证书是在apk包里面，所以我们直接解压，找到证书导入bp，但是需要密码，需要反编译，因为有壳，所以这里我们是没法绕过的。
 
-
-
 直接解压apk文件    一般看的是里面的assets和res文件     再里面找到apk对应的证书。
 
 ![image-20250403140532904](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613116.png)
 
-
-
-1h34min 使用工具对目标apk进行反编译尝试，使用frida的另一个模块尝试脱壳。
+使用工具对目标apk进行反编译尝试，使用frida的另一个模块尝试脱壳。
 
 使用对应的Dump模块进行脱壳的时候，需要进去输入对应的命令，这里xd不会，，，，，，
 
@@ -232,7 +216,7 @@ IOS端-双向认证-SSL Kill switch 2
 
 11min  mt nt两个管理器  修改后重打包，然后加签就可成功
 
-14min 开发者助手，需要注意：dex文件在全局搜索的时候搜不到，需要单独进入dex文件中。layout是apk的框架视图等
+开发者助手，需要注意：dex文件在全局搜索的时候搜不到，需要单独进入dex文件中。layout是apk的框架视图等
 
 ![image-20250403144618195](https://cdn.jsdelivr.net/gh/maybeyjb/blue-team/img/202506161613118.png)
 
@@ -240,19 +224,19 @@ IOS端-双向认证-SSL Kill switch 2
 
 32min MT的Dex编辑器有问题
 
-33min 用NT管理器对靶场进行测试，更改里面的对应字符。然后重新打包，在安装。
+用NT管理器对靶场进行测试，更改里面的对应字符。然后重新打包，在安装。
 
 smail语法，可以转为java代码
 
 
 
-40min  第二关
+第二关
 
 48min 第二种方式。
 
 
 
-52min  视图更改，绕过广告。
+ 视图更改，绕过广告。
 
 去除弹窗就是把他延迟改为0秒，看似是瞬间弹窗，实则是不弹窗了，就是一瞬间就消失了。
 
@@ -270,7 +254,7 @@ hook的算法助手、视图修改主要关注Activity&Xml文件
 
 ### 淘小说vip：
 
-1h10min 
+
 
 定位就根据关键词，id等字眼进行全局搜索
 
@@ -280,11 +264,11 @@ hook的算法助手、视图修改主要关注Activity&Xml文件
 
 ### 元气森林：
 
-1h23min  绕过vip限制
+绕过vip限制
 
-绕过时间戳1h26min  改为北京时间的99999  已经就是不会过期，永久有效
+绕过时间戳 改为北京时间的99999  已经就是不会过期，永久有效
 
-1h28min 因为bp的改包只一次有效。
+因为bp的改包只一次有效。
 
 所以需要用到小黄鸟抓包，通过插件可以永远固定你改的包，就成功绕过了vip。
 
@@ -298,11 +282,9 @@ MT的Dex编辑器只有++才能用
 
 安卓逆向工具
 
-jeb破解版。2min 
+jeb破解版。
 
 4min---- 18min 配置环境
-
-
 
 ### 逆向：
 
@@ -311,8 +293,6 @@ jeb破解版。2min
 24min  下断点进行调试。
 
 感觉有点像js逆向。
-
-
 
 35min app测试，反编译测试逆向。
 
@@ -348,13 +328,13 @@ HOOK技术：
 
 
 
-31min  开始对抖因进行HOOK技术，
+开始对抖因进行HOOK技术，
 
 然后利用算法助手进行屏蔽root技术
 
 
 
-37min 使用自定义hook
+使用自定义hook
 
 这里是将你类里面对应的包的方法值修改为你想要的。好比抓包修改值一样。
 
@@ -364,31 +344,15 @@ HOOK技术：
 
 
 
-45min 算法分析
+算法分析
 
 用算法助手可以进行算法分析，进而快速定位apk的加解密的算法地方。就可以不用你自己一步一步断点调试找了。
 
-52min   逆向成人b站，绕过vip等级限制。这里还是精准定位关键字找到其逻辑代码。
+ 逆向成人b站，绕过vip等级限制。这里还是精准定位关键字找到其逻辑代码。
 
 进而修改值，成功实现。
 
 1h  hook也可以实现，还是使用算法助手。跟上面一样，更改对应类里面的方法值。然后再启动模板进行hook。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 90：小程序
 
@@ -418,13 +382,7 @@ applet目录下，打开小程序所产生的文件夹，进行反编译。
 
 所以一般对这种分包的用unveilr工具，支持对整个文件夹进行反编译。
 
-43min 演示
+演示
 
 1h  案例分析
-
-
-
-
-
-
 
